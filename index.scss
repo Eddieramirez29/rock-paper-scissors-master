@@ -1,0 +1,129 @@
+$width-mobile:300px;
+$height-mobile:150px;
+$border-radius-containers-mobile:5px;
+$border-width-mobile:15px;
+body
+{
+    width: 425px;
+    background-color: hsl(214, 47%, 23%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerTitle
+{
+    border: 5px solid hsl(217, 16%, 45%);
+    width: $width-mobile;
+    height: calc($height-mobile/1.5);
+    display: flex;
+    justify-content: space-between;
+    border-radius: $border-radius-containers-mobile;
+}
+
+#nameGame
+{
+    margin-left: 20px;
+    color: white;
+    font-size: larger;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: calc($width-mobile/2);
+    height: calc($height-mobile/1.5);
+}
+.containerScore
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc($width-mobile/2);
+    height: calc($height-mobile/1.5);
+}
+
+#counter
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: azure;
+    border-radius: $border-radius-containers-mobile;
+    width: 80px;
+    height: 80px;
+}
+#scoreText
+{
+    color:  hsl(214, 47%, 23%);
+    font-size: xx-small;
+    font-weight: bolder;
+}
+
+#score
+{
+    color: rgb(49, 48, 48);
+    font-size: xx-large;
+}
+
+.containerGame
+{
+    width: $width-mobile;
+    height: calc($height-mobile*2);
+    border: 5px solid hsl(217, 16%, 45%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerGame-elements
+{
+    width: $width-mobile;
+    height: calc($height-mobile*1.4);
+    border: 5px solid hsl(217, 16%, 45%);
+}
+
+.containerTwo, .containerOne
+{
+    width: $width-mobile;
+    height: calc($height-mobile/1.28574);
+}
+
+.containerTwo
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.containerOne
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#paper, #rock, #scissors
+{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+#paper
+{
+    border: 15px solid hsl(214, 85%, 34%);
+}
+
+#scissors
+{
+    border: 15px solid hsl(54, 93%, 52%);
+}
+
+#rock
+{
+    border: 15px solid hsl(1, 92%, 59%);
+}
+
+img
+{
+    height: 35px;
+    width: 35px;
+}
