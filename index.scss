@@ -70,7 +70,7 @@ body
 {
     width: $width-mobile;
     height: calc($height-mobile*2);
-    border: 5px solid hsl(217, 16%, 45%);
+    // border: 5px solid hsl(217, 16%, 45%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,7 +80,7 @@ body
 {
     width: $width-mobile;
     height: calc($height-mobile*1.4);
-    border: 5px solid hsl(217, 16%, 45%);
+    // border: 5px solid hsl(217, 16%, 45%);
 }
 
 .containerTwo, .containerOne
@@ -105,11 +105,23 @@ body
     width: 90px;
     height: 90px;
     border-radius: 50%;
+    box-shadow: 2px 2px 5px gray;
 }
+
+#paper:active, #rock:active, #scissors:active, #buttonPlayAgain:active, #rules:active
+{
+    transform: scale(0.95);
+}
+
 
 #paper
 {
     border: 15px solid hsl(214, 85%, 34%);
+}
+
+#paper:hover
+{
+    border: 15px solid hsl(214, 88%, 54%);
 }
 
 #scissors
@@ -117,13 +129,80 @@ body
     border: 15px solid hsl(54, 93%, 52%);
 }
 
+#scissors:hover
+{
+    border: 15px solid hsl(54, 91%, 61%);
+}
+
 #rock
 {
     border: 15px solid hsl(1, 92%, 59%);
+}
+
+#rock:hover
+{
+    border: 15px solid hsl(1, 90%, 65%);
 }
 
 img
 {
     height: 35px;
     width: 35px;
+}
+
+.containerMessage
+{
+    // border: 5px solid hsl(217, 16%, 45%);
+    width: $width-mobile;
+    height: $height-mobile/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#win, #buttonPlayAgain
+{
+    display: none;
+}
+
+#win
+{
+    color: white;
+    font-size: xx-large;
+}
+
+#buttonPlayAgain
+{
+    width: $width-mobile/1.5;
+    height: 40px;
+    border-radius: $border-radius-containers-mobile;
+    border: none;
+    background-color: gray;
+    font-weight: bolder;
+}
+
+#buttonPlayAgain:hover
+{
+    background-color: rgb(184, 182, 182);
+}
+
+.containerRules
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 5px solid hsl(217, 16%, 45%);
+    width: $width-mobile;
+    height: $height-mobile/2;
+}
+
+#rules
+{
+    background-color: hsl(214, 47%, 23%);
+    color: white;
+    border-radius: $border-radius-containers-mobile;
+    border: 1px solid hsl(0, 0%, 100%);
+    width: 120px;
+    height: 35px;
 }

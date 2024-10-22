@@ -60,7 +60,6 @@ body {
 .containerGame {
   width: 300px;
   height: 300px;
-  border: 5px solid hsl(217, 16%, 45%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,7 +68,6 @@ body {
 .containerGame-elements {
   width: 300px;
   height: 210px;
-  border: 5px solid hsl(217, 16%, 45%);
 }
 
 .containerTwo, .containerOne {
@@ -91,21 +89,86 @@ body {
   width: 90px;
   height: 90px;
   border-radius: 50%;
+  box-shadow: 2px 2px 5px gray;
+}
+
+#paper:active, #rock:active, #scissors:active, #buttonPlayAgain:active, #rules:active {
+  transform: scale(0.95);
 }
 
 #paper {
   border: 15px solid hsl(214, 85%, 34%);
 }
 
+#paper:hover {
+  border: 15px solid hsl(214, 88%, 54%);
+}
+
 #scissors {
   border: 15px solid hsl(54, 93%, 52%);
+}
+
+#scissors:hover {
+  border: 15px solid hsl(54, 91%, 61%);
 }
 
 #rock {
   border: 15px solid hsl(1, 92%, 59%);
 }
 
+#rock:hover {
+  border: 15px solid hsl(1, 90%, 65%);
+}
+
 img {
   height: 35px;
   width: 35px;
+}
+
+.containerMessage {
+  width: 300px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#win, #buttonPlayAgain {
+  display: none;
+}
+
+#win {
+  color: white;
+  font-size: xx-large;
+}
+
+#buttonPlayAgain {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: gray;
+  font-weight: bolder;
+}
+
+#buttonPlayAgain:hover {
+  background-color: rgb(184, 182, 182);
+}
+
+.containerRules {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 75px;
+}
+
+#rules {
+  background-color: hsl(214, 47%, 23%);
+  color: white;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 0%, 100%);
+  width: 120px;
+  height: 35px;
 }/*# sourceMappingURL=index.css.map */
