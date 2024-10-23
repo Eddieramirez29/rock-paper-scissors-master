@@ -2,6 +2,7 @@ $width-mobile:300px;
 $height-mobile:150px;
 $border-radius-containers-mobile:5px;
 $border-width-mobile:15px;
+$desktop-size:426px;
 body
 {
     width: 425px;
@@ -205,4 +206,44 @@ img
     border: 1px solid hsl(0, 0%, 100%);
     width: 120px;
     height: 35px;
+}
+
+@media (min-width:$desktop-size)
+{
+    body
+    {
+        width: 768px;
+    }
+    .containerRules
+    {
+        position: absolute;
+        bottom:0;
+        right: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #rules
+    {
+        width: 60px;
+        height: 18px;
+        font-size: xx-small;
+        margin-right: 30px;
+    }
+}
+
+@media (min-width:1024px)
+{
+    body
+    {
+        width: 1024px;
+    }
+}
+
+@media (min-width:1440px)
+{
+    body
+    {
+        width: 1440px;
+    }
 }
