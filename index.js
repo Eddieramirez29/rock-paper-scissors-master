@@ -6,6 +6,10 @@ const rock = document.getElementById("rock");
 //Other variables
 const winLable = document.getElementById("win");
 const buttonPlayAgainLable = document.getElementById("buttonPlayAgain");
+const scoreValue = document.getElementById("score");
+let score = 0;
+
+
 
 
 let computerSelection;
@@ -74,9 +78,15 @@ rock.addEventListener("click", function() {
     }
 });
 
-function displayResult(winner)
+function displayResult(text)
 {
     winLable.style.display = "block";
-    winLable.textContent = winner;
+    winLable.textContent = text;
     buttonPlayAgainLable.style.display = "block";
+
+    if(text === "YOU WIN!")
+    {
+        score++;
+        scoreValue.textContent = score;
+    }
 }
