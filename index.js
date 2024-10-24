@@ -5,7 +5,7 @@ const rock = document.getElementById("rock");
 
 //Other variables
 const winLable = document.getElementById("win");
-const buttonPlayAgainLable = document.getElementById("buttonPlayAgain");
+const buttonPlayAgainButton = document.getElementById("buttonPlayAgain");
 const scoreValue = document.getElementById("score");
 let score = 0;
 
@@ -78,11 +78,19 @@ rock.addEventListener("click", function() {
     }
 });
 
+buttonPlayAgainButton.addEventListener("click", function()
+{
+    winLable.style.display = "none";
+    buttonPlayAgainButton.style.display = "none";
+    scoreValue.textContent = "0";
+    score = 0;
+});
+
 function displayResult(text)
 {
     winLable.style.display = "block";
     winLable.textContent = text;
-    buttonPlayAgainLable.style.display = "block";
+    buttonPlayAgainButton.style.display = "block";
 
     if(text === "YOU WIN!")
     {
