@@ -89,10 +89,12 @@ buttonPlayAgainButton.addEventListener("click", function()
 function displayResult(text)
 {
     winLable.style.display = "block";
-    // Después de 1 segundo (1000 milisegundos), ocultar el elemento
-setTimeout(function() {
-    winLable.style.display = "none";
-}, 1000)
+    // After one second, it disappears
+    setTimeout(function()
+    {
+        winLable.style.display = "none";
+    }, 1000);
+    
     winLable.textContent = text;
     buttonPlayAgainButton.style.display = "block";
 
